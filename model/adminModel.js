@@ -2,22 +2,30 @@ const db = require('../config/db');
 
 const model = {
     getCategory: async () => {
-        const sql = 'SELECT * FROM category';
-        const sql1 = 'SELECT COUNT(*) from artice'
-        const params = [3]
-        const data = await db.query(sql, params);
-        console.log('data1', data);
-        return data;
+        // const sql = 'SELECT category.category_id, category.name, third.num FROM category join (SELECT category_id, count(article_id) AS num FROM article group by category_id) AS third WHERE category.category_id = third.category_id';
+        const sql = 'SELECT * FROM category ORDER BY category_id ASC';
+        return data = await db.query(sql);
     },
     getArticle: async () => {
         const sql = 'SELECT * FROM article';
         return await db.query(sql);
     },
-    addCategory: async () => {
-        // const sql = 'INSERT INTO category(name,)'
+    addCategory: async (name) => {
+        const sql = 'INSERT INTO category (name) values (?)';
+        return result = await db.query(sql, [name]);
+    },
+    deleteCategory: async (name) => {
+        const sql = 'DELETE from category WHERE name = ?';
+        return result = await db.query(sql, [name]);
+    },
+    getArticle: async () => {
+        const sql = 'SELECT article_id, title, description, last_date, views, lb.name AS "category" FROM '+
+                    'article, category AS lb '+
+                    'WHERE article.category_id = lb.category_id '+
+                    'ORDER BY article_id ';
+        return result = await db.query(sql);
     }
 }
 
 module.exports = model;
 
-// insert into article (title, description, last_date, views, category_id) values('学习angular','我正在学习angular,这是一个测试.嘿嘿', '2018-06-18' 10, 1)
