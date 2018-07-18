@@ -1,5 +1,6 @@
 const db = require('../config/db');
-var markdown = require( "markdown" ).markdown;
+// var MarkdownIt = require('markdown-it');
+
 
 
 const model = {
@@ -34,17 +35,14 @@ const model = {
         return await db.query(sql, [id]);
     },
     postArticle: async (title, description, category_id) => {
-        console.log('category_id', category_id)
-        console.log("description", description);
+        // const md = new MarkdownIt();
+        // const result = md.render(description);
         const sql = 'INSERT INTO article'+
                     '(title, description, last_date, category_id) '+
                     'VALUES(?, ?, CURDATE(), ?)';
         return await db.query(sql, [title, description, category_id]);
     },
     modifyArticle: async (title, description, id) => {
-        // console.log('description', description)
-        // console.log('html', markdown.toHTML( description ) )
-        // description = markdown.toHTML( description ) 
         const sql = 'UPDATE article SET title=?, description=? WHERE article_id = ?';
         return await db.query(sql, [title, description, id]);
     },
