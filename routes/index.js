@@ -18,4 +18,9 @@ router.get('/article', async (req, res) => {
     res.send(data);
 })
 
+router.get('/articleFive', async (req, res) => {
+    const data = await indexModel.getArticleFive();
+    res.send(data);
+})
+
 module.exports = router;

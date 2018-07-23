@@ -12,6 +12,10 @@ const model = {
         'WHERE article.category_id = category.category_id '+
         'ORDER BY article_id DESC LIMIT 3';
         return await db.query(sql);
+    },
+    getArticleFive: async () => {
+        const sql = 'SELECT article_id, title FROM article ORDER BY last_date DESC LIMIT 5';
+        return await db.query(sql);
     }
 }
 
