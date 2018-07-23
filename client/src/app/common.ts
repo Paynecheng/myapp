@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-// export const host = 'http://47.94.8.47:3000/';
-export const host = 'http://localhost:3000/';
+export const host = 'http://47.94.8.47:3000/';
+// export const host = 'http://localhost:3000/';
 
 @Pipe({
     name: 'AddEllipsis'
