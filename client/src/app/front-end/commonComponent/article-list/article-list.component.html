@@ -1,0 +1,12 @@
+<div class="articleList">
+  <a [routerLink]="['/front-end/detail', article.article_id]">
+    <h3 class="home_title">{{article.title}}</h3>
+    <p>
+      <i class="anticon anticon-tags"></i><span>【{{article.category}}】</span>
+      <i class="anticon anticon-calendar"></i><span>{{article.last_date | date: 'yyyy-MM-dd'}}</span>
+      <i class="anticon anticon-eye"></i><span>{{article.views}}</span>
+    </p>
+    <div class="home_text" [innerHTML]="article.description | slice:0:200 | AddEllipsis">
+    </div>
+  </a>
+</div>

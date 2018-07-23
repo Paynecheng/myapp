@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+body, p, button, input, textarea, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+
+.commonWidth{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    color: #3c3c3c;
+}
+code{
+    white-space: normal;
+    word-break: break-all;
+}
+
+
+/* a{
+    text-decoration: none;
+} */

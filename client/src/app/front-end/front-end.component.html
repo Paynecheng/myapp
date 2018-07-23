@@ -1,0 +1,22 @@
+<app-header class="header" [category]='category'></app-header>
+<div class="contentBody">
+    <div class="myself"></div>
+    <div class="commonWidth c_wrap">
+        <div class="c_panel">
+            <h3>把所有的夜归还给星河</h3>
+            <h3>把所有的春光归还给疏疏篱落</h3>
+        </div>
+        <div class="contentWrap">
+            <div nz-row nzGutter='16'>
+                <div nz-col class='gutter-row' nzSpan='18'>
+                    <!--<app-article-list *ngFor='let item of article' [article]='item'></app-article-list>-->
+                    <router-outlet></router-outlet>
+                </div>
+                <div nz-col class="gutter-row" nzSpan='6'>
+                    <app-right-content></app-right-content>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<app-footer></app-footer>-->
+</div>

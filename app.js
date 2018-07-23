@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(cors());
 
 app.use('/', indexRouter);
@@ -32,6 +32,10 @@ app.use('/frontEnd', indexRouter);
 app.use('/admin', adminRouter);
 app.use('/list', listRouter);
 app.use('/detail', detailRouter);
+app.get('*', function (request, response){
+  // response.send
+  response.sendfile(path.resolve(__dirname, 'public', 'index.html'))
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

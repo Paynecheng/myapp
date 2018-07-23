@@ -1,0 +1,150 @@
+.control-box{
+    position: fixed;
+    bottom: 0;
+    width: 1200px;
+    height: 50px;
+    background: #303030;
+    opacity: .8;
+    z-index: 1;
+}
+.control-box>div{
+    float: left;
+}
+.song-img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background: url("../../../../assets/images/playbar.png") no-repeat 0 -80px;
+}
+.song-info{
+    color: #e8e8e8;
+    font-size: 12px;
+}
+.song-info .songp{
+    line-height: 25px;
+    max-width: 130px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.song-info .song-author{
+    color: #9b9b9b;
+}
+
+.btns{
+    margin-left: 40px;
+}
+#play-right, #play-left {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: -3px;
+}
+.btns span{
+    display: inline-block;
+    cursor: pointer;
+}
+#play-left{
+    background: url("/assets/images/playbar.png") no-repeat 0 -130px;
+}
+#play-left:hover{
+    background: url("/assets/images/playbar.png") no-repeat -30px -130px;
+}
+#play{
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+    background: url("/assets/images/playbar.png") no-repeat 0 -204px;
+}
+#play-right{
+    background: url("/assets/images/playbar.png") no-repeat -80px -130px;
+}
+#play-right:hover{
+    background: url("/assets/images/playbar.png") no-repeat -110px -130px;
+}
+#progressbar{
+    width: 500px;
+    position: relative;
+}
+.pbar{
+    height: 9px;
+    margin-left: 20px;
+    margin-top: 22px;
+    border-radius: 6px;
+}
+#ready{
+    width: 100%;
+    background: #000;
+}
+#current{
+    position: absolute;
+    width: 50%;
+    top: 0;
+    background: #C70C0C;
+}
+#current #big-circle{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+#big-circle i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: #C70C0C;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.time{
+    color: #e8e8e8;
+    margin-left: 30px;
+}
+.time p{
+    margin-top: 15px;
+}
+.time i{
+    font-style: normal;
+}
+#right-control span{
+    display: inline-block;
+    cursor:pointer;
+    margin-left: 30px;
+    margin-top: 13px;
+}
+#right-control span:first-child, #right-control span:nth-child(2){
+    width: 25px;
+    height: 25px;
+}
+#play-list{
+    position: relative;
+    top: -7px;
+    color: #e8e8e8;
+    width: 60px;
+    height: 25px;
+    padding-left: 35px;
+    padding-top: 2px;
+    background: url("/assets/images/playbar.png") no-repeat -42px -68px;
+}
+#play-list:hover{
+    background: url("/assets/images/playbar.png") no-repeat -42px -98px;
+}
+#voice{
+    background: url("/assets/images/playbar.png") no-repeat -2px -248px;
+}
+#voice:hover{
+    background: url("/assets/images/playbar.png") no-repeat -31px -248px;
+}
+#play-type {
+    background: url("/assets/images/playbar.png") no-repeat -3px -344px;
+}
+#play-type:hover{
+    background: url("/assets/images/playbar.png") no-repeat -33px -344px;
+}

@@ -1,0 +1,21 @@
+.articleList{
+    box-sizing: border-box;
+    margin: 0 10px 30px 10px;
+    border: 1px solid #bababa;
+    border-radius: 6px;
+}
+.articleList a{
+    display: block;
+    padding: 10px 15px;    
+    color: #3c3c3c;
+}
+.articleList span{
+    margin-right: 30px;
+    margin-left: 5px;
+}
+.home_title{
+    font-size: 28px;
+}
+.home_text{
+    line-height: 30px;
+}

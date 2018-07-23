@@ -1,0 +1,18 @@
+.detail{
+    padding: 20px;
+}
+.detail span{
+    margin-right: 60px;
+    margin-left: 10px;
+}
+.detail_title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.article_info{
+    margin-top: 20px;
+}
+.article_desc{
+    line-height: 26px;
+    margin-top: 20px;
+}

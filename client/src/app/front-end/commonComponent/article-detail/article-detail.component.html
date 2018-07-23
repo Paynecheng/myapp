@@ -1,0 +1,9 @@
+<div class="detail">
+	<h3 class="detail_title">{{ article.title }}</h3>
+	<p class="article_info">
+		<i class="anticon anticon-calendar"></i><span>{{article.last_date | date: 'yyyy-MM-dd'}}</span>
+		<i class="anticon anticon-eye"></i><span>{{article.views}}</span>
+		<i class="anticon anticon-tags"></i><span>{{article.category}}</span>
+	</p>
+	<div class="article_desc" [innerHtml]="article.description"></div>
+</div>

@@ -1,0 +1,29 @@
+<button nz-button nzType="primary" class="addBtn" (click)='gotoEdit(0)'>
+  <span>添加</span>
+</button>
+<nz-table #basicTable [nzData]="dataSet">
+  <thead>
+    <tr>
+      <th>序号</th>
+      <th>标题</th>
+      <th>发表时间</th>
+      <th>浏览次数</th>
+      <th>所属类别</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data; let index = index">
+      <td>{{index+1}}</td>
+      <td><a>{{data.title}}</a></td>
+      <td>{{data.last_date | date:'yyyy-MM-dd'}}</td>
+      <td>{{data.views}}</td>
+      <td>{{data.category}}</td>
+      <td>
+        <a (click)='gotoEdit(data.article_id)'>编辑</a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a (click)='deleteArticle(data.article_id, data.title)'>删除</a>
+      </td>
+    </tr>
+  </tbody>
+  </nz-table>

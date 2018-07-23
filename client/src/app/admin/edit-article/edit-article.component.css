@@ -1,0 +1,34 @@
+#titleInput{
+    width: 800px;
+}
+.areaBox{
+    margin-top: 50px;
+}
+.selectBox {
+    margin-bottom: 50px;
+}
+#articleText{
+    width: 800px;
+    height: 400px;
+    resize: none;
+    vertical-align:top    
+}
+#editBox>div{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnBox{
+    display: flex;
+}
+.articleBtn{
+    margin-top: 25px;
+    width: 120px;
+    height: 40px;
+}
+#submit{
+    margin-left: 60px;
+}
+#cancle{
+    margin-left: 510px;
+}

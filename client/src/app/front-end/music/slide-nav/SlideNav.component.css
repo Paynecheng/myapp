@@ -1,0 +1,12 @@
+.slide-nav{
+    color: #3c3c3c;
+    float: left;
+    width: 30%;
+    height: 500px;
+    border-right: 1px solid #3c3c3c;
+    /*background: linear-gradient(to right, #2C315B, #382D47);*/
+    /*opacity: .9;*/
+}
+.slide-nav h3{
+    color: #ffffff;
+}

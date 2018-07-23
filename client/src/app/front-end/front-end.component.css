@@ -1,0 +1,41 @@
+.header::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.contentBody{
+    margin-top: 80px;
+}
+.myself{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../../assets/images/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.c_wrap{
+    margin-top: 80px;
+}
+.c_panel{
+    background: #fff;
+    opacity: .5;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 0 10px;
+}
+.c_panel h3{
+    font-size: 28px;
+    color: #3c3c3c
+}
+.c_panel h3:first-child{
+    padding-top: 100px;
+    text-align: left;
+}
+.c_panel h3:last-child{
+    text-align: right
+}

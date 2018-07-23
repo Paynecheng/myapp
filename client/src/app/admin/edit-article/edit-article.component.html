@@ -1,0 +1,28 @@
+<div id="editBox">
+
+    <div class="selectBox">
+      <span>类别：</span>
+      <nz-select  *ngIf='id !== "0"' style="width: 200px;" [(ngModel)]="yyy" [nzSize]="size">
+        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.category" [nzValue]="option.category"></nz-option>        
+      </nz-select>
+      <nz-select  *ngIf='id === "0"' style="width: 200px;" [(ngModel)]="yyy" [nzSize]="size">
+        <nz-option *ngFor="let option of listOfOption" [nzLabel]="option.name" [nzValue]="option.name"></nz-option>        
+      </nz-select>
+    </div>
+  
+  <div>
+    <span>标题：</span><input nz-input placeholder="请输入标题" nzSize="large" id='titleInput' [(ngModel)]="title">
+  </div>
+
+  <div class="areaBox">
+    <span>正文：</span>
+    <textarea nz-input [(ngModel)]="description" id="articleText"></textarea>
+    <!-- <md-editor name="Content" [(ngModel)]="description" [height]="'500px'" ></md-editor> -->
+  </div>
+  <div class="btnBox">
+    <button class="articleBtn" nz-button [nzSize]="size" nzType="primary" id="cancle" (click)="cancle()">取消</button>    
+    <button *ngIf='this.id !== "0"' class="articleBtn" nz-button [nzSize]="size" nzType="primary" id="submit" (click)="modifyArticle()">提交</button>
+    <button *ngIf='this.id === "0"' class="articleBtn" nz-button [nzSize]="size" nzType="primary" id="submit" (click)="submitArticle()">提交</button>
+  </div>
+
+</div>
