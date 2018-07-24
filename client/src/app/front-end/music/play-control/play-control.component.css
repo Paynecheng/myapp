@@ -76,13 +76,13 @@
 }
 #ready{
     width: 100%;
-    background: #000;
+    background: #969595;
 }
 #current{
     position: absolute;
     width: 50%;
     top: 0;
-    background: #C70C0C;
+    background: #071529;
 }
 #current #big-circle{
     position: absolute;

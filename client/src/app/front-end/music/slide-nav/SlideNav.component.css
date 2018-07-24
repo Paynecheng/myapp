@@ -7,6 +7,30 @@
     /*background: linear-gradient(to right, #2C315B, #382D47);*/
     /*opacity: .9;*/
 }
+.music-logo{
+    width: 240px;
+    height: 120px;
+    margin: 10px auto;
+    background: url("/assets/images/music.png") no-repeat -32px -84px;
+}
 .slide-nav h3{
-    color: #ffffff;
+    padding-left: 18px;
+    color: #3c3c3c;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.slide-nav ul{
+    padding-left: 15px;
+}
+.slide-nav li{
+    line-height: 38px;
+}
+.slide-nav li:hover{
+    background: #f6f6f6;
+}
+.slide-nav li a{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10px;
 }

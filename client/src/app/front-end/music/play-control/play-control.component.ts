@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 
 @Component({
   selector: 'app-play-control',
   template: `<div class="control-box">
-      <div class="song-img"><img src="../../../../assets/images/xietianxiao.jpg" /></div>
+      <div class="song-img"><img src="/assets/images/xietianxiao.jpg" /></div>
       <div class="song-info">
           <p class="song-name songp">潮起潮落是什么都不为</p>
           <p class="song-author songp">谢天笑</p>
@@ -33,6 +33,10 @@ import { Component } from '@angular/core';
   </div>`,
   styleUrls: ['./play-control.component.css']
 })
-export class PlayControlComponent {
+export class PlayControlComponent implements OnInit {
   constructor() {}
+
+  @Input() flag;
+
+  ngOnInit() {}
 }

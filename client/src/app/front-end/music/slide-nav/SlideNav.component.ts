@@ -5,15 +5,14 @@ import { Component } from '@angular/core';
   template: `<div class="slide-nav">
       <div class="music-logo"></div>
       <h3>我的音乐</h3>
-      <ul>
-          <li>我最喜欢</li>
-          <li>摇滚</li>
-          <li>民谣</li>
-          <li>古风</li>
-          <li>至此流年各天涯</li>
-          <li>被狗骑着上战场</li>
-          <li>老谢的歌单</li>
-          <li>纯音乐</li>
+      <ul class="my-love">
+          <li><i class="anticon anticon-right"></i><a routerLink="">我最喜欢</a></li>
+          <li><i class="anticon anticon-right"></i><a routerLink="">摇滚</a></li>
+          <li><i class="anticon anticon-right"></i><a routerLink="">民谣</a></li>
+          <li><i class="anticon anticon-right"></i><a routerLink="">古风</a></li>
+          <li><i class="anticon anticon-right"></i><a routerLink="">纯音乐</a></li>
+          <li><i class="anticon anticon-right"></i><a routerLink="">至此流年各天涯</a></li>
+          <li><i class="anticon anticon-right"></i><a routerLink="">被狗骑着上战场</a></li>
       </ul>
   </div>`,
   styleUrls: ['./SlideNav.component.css']
