@@ -1,8 +1,8 @@
 <nz-layout>
-    <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="triggerTemplate">
+    <nz-sider nzCollapsible>
       <div class="logo">
       </div>
-      <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'" [nzInlineCollapsed]="isCollapsed">
+      <ul nz-menu [nzTheme]="'dark'" [nzMode]="'inline'">
         <li nz-submenu>
           <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
           <ul>
@@ -19,7 +19,7 @@
     </nz-sider>
     <nz-layout>
       <nz-header style="background: #fff; padding:0;">
-        <i class="anticon trigger" [class.anticon-menu-fold]="!isCollapsed" [class.anticon-menu-unfold]="isCollapsed" (click)="isCollapsed=!isCollapsed"></i>
+        <i class="anticon trigger"></i>
       </nz-header>
       <nz-content style="margin:0 16px;">
         <nz-breadcrumb style="margin:16px 0;">

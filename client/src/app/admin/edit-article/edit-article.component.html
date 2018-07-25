@@ -20,7 +20,7 @@
     <!-- <md-editor name="Content" [(ngModel)]="description" [height]="'500px'" ></md-editor> -->
   </div>
   <div class="btnBox">
-    <button class="articleBtn" nz-button [nzSize]="size" nzType="primary" id="cancle" (click)="cancle()">取消</button>    
+    <button class="articleBtn" nz-button nzType="primary" id="cancle" (click)="cancle()">取消</button>    
     <button *ngIf='this.id !== "0"' class="articleBtn" nz-button [nzSize]="size" nzType="primary" id="submit" (click)="modifyArticle()">提交</button>
     <button *ngIf='this.id === "0"' class="articleBtn" nz-button [nzSize]="size" nzType="primary" id="submit" (click)="submitArticle()">提交</button>
   </div>

@@ -24,21 +24,21 @@ import { Component, OnInit } from '@angular/core';
                     <td class='download'><i class="anticon anticon-download"></i></td>
                   </tr>
                   <tr>
-                    <td class="song-name"><i class="anticon anticon-play-circle" (click)='play($e)'></i>向阳花</td>
+                    <td class="song-name"><i class="anticon anticon-play-circle"></i>向阳花</td>
                     <td class="songer">谢天笑</td>
                     <td class="album">X.T.X</td>
                     <td class="duration">04:59</td>
                     <td class='download'><i class="anticon anticon-download"></i></td>
                   </tr>
                   <tr>
-                    <td class="song-name"><i class="anticon anticon-play-circle" (click)='play(e)'></i>再次来临</td>
+                    <td class="song-name"><i class="anticon anticon-play-circle"></i>再次来临</td>
                     <td class="songer">谢天笑</td>
                     <td class="album">X.T.X</td>
                     <td class="duration">06:53</td>
                     <td class='download'><i class="anticon anticon-download"></i></td>
                   </tr>
                   <tr>
-                    <td class="song-name"><i class="anticon anticon-play-circle" (click)='play(e)'></i>永远是个秘密</td>
+                    <td class="song-name"><i class="anticon anticon-play-circle"></i>永远是个秘密</td>
                     <td class="songer">谢天笑</td>
                     <td class="album">幻觉</td>
                     <td class="duration">04:20</td>
